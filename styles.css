@@ -1,0 +1,28 @@
+/* Reseta margens e preenchimentos padrão */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(teste.jpg); /* Adicione sua imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+}
+
+/* Estilo para o cabeçalho fixo */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.3); /* Fundo semi-transparente vermelho */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1000; /* Garante que o cabeçalho esteja sempre acima de outros elementos */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding-top: 50px; /* Deixa espaço suficiente para o cabeçalho fixo */
+}
